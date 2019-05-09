@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="joomgallery" method="upgrade">
+  <name>PLG_JOOMALPHAUSERPOINTS</name>
+  <author>- 2015 Chraneco; since 2019 JoomGallery::ProjectTeam</author>
+  <creationDate>2019/04/08</creationDate>
+  <copyright>Copyright (C) 2009 - 2019 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorUrl>www.joomgalleryfriends.net</authorUrl>
+  <version>3.0.0</version>
+  <description>PLG_JOOMALPHAUSERPOINTS_XML_DESCRIPTION</description>
+  <files>
+    <filename plugin="joomalphauserpoints">joomalphauserpoints.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <languages folder="language">
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joomalphauserpoints.ini</language>
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joomalphauserpoints.sys.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joomalphauserpoints.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joomalphauserpoints.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="points_for_comment_on_own_image" type="radio" default="1" label="PLG_JOOMALPHAUSERPOINTS_FIELD_POINTS_FOR_COMMENT_ON_OWN_IMAGE" description="PLG_JOOMALPHAUSERPOINTS_FIELD_POINTS_FOR_COMMENT_ON_OWN_IMAGE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="points_for_ones_own_tag" type="radio" default="1" label="PLG_JOOMALPHAUSERPOINTS_FIELD_POINTS_FOR_ONES_OWN_TAG" description="PLG_JOOMALPHAUSERPOINTS_FIELD_POINTS_FOR_ONES_OWN_TAG_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers>
+    <server type="collection" priority="1" name="JoomGallery Update Service">https://www.joomgalleryfriends.net/components/com_newversion/xml/extensions3.xml</server>
+  </updateservers>
+</extension>

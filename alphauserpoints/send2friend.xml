@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alphauserpoints type="plugin">
+  <rule>Send image to a friend</rule>
+  <description>Assign points when a registered user uses the send2friend function in the detail view of JoomGallery</description>
+  <component>JoomGallery</component>
+  <plugin_function>plgaup_joomgallery_send2friend</plugin_function>
+  <fixed_points>true</fixed_points>
+</alphauserpoints>

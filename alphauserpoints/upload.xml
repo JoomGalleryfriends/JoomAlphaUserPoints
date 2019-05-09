@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alphauserpoints type="plugin">
+  <rule>Upload image</rule>
+  <description>Assign points when a registered user uploads an image in JoomGallery (may also be negative to reduce points)</description>
+  <component>JoomGallery</component>
+  <plugin_function>plgaup_joomgallery_upload</plugin_function>
+  <fixed_points>true</fixed_points>
+</alphauserpoints>
